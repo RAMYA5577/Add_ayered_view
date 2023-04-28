@@ -29,14 +29,14 @@ public class StudentRepository {
     //updating
     public String updateStudent(int id,int age){
         if(!db.containsKey(id)){
-            return "Invalid Id";
+            return null;
         }
             // Student student=db.get(id);
            // student.setAge(age);
           // db.put(id,student);
         db.get(id).setAge(22);
 
-        return "Age Successfully Updated";
+        return "Successfully Updated";
     }
 
     //deleting
